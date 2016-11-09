@@ -1,2 +1,27 @@
 <h1>Signup#new</h1>
-<p>Find me in app/views/signup/new.html.erb</p>
+
+<%= form_for @user, url: '/signup' do |f| %>
+  <p>
+    <%= f.label :name, 'Your name' %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :email, 'Your email' %>
+    <%= f.email_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :password, 'Your password' %>
+    <%= f.password_field :password %>
+  </p>
+
+  <p>
+    <%= f.label :password_confirmation, 'Confirm your password' %>
+    <%= f.password_field :password_confirmation %>
+  </p>
+
+  <p>
+    <%= f.submit 'Create my account' %>
+  </p>
+<% end %>

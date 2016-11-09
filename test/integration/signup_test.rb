@@ -14,4 +14,12 @@ class SignupTest < ActionDispatch::IntegrationTest
     assert_equal '/login', page.current_path
     assert page.has_text?("Your account has been created.")
   end
+
+  test "with invalid data" do
+    visit '/'
+    click_link 'Sign up'
+    click_on 'Create my account'
+    assert_equal '/signup', page.current_path
+    assert page.has_text?("Please double check your form before continuing:")
+  end
 end

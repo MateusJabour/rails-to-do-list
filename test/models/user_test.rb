@@ -46,7 +46,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "rejects duplicated email" do
-    user = User.create!(name: "John", email:"john@example.org", password: "test")
+    user = FactoryGirl.create(:user)
     another_user = User.create(email: user.email)
 
     refute another_user.errors[:email].empty?

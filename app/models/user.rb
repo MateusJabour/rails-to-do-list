@@ -15,6 +15,7 @@ class User < ApplicationRecord
   /ix
 
   validates_presence_of :name
-  validates_format_of :email, with: EMAIL_FORMAT
+  # validates_format_of :email, with: EMAIL_FORMAT
+  validates_email_format_of :email
   validates_uniqueness_of :email
 end

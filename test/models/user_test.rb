@@ -19,6 +19,7 @@ class UserTest < ActiveSupport::TestCase
     a__a@example.com
     a.-a@example.com
     a_-a@example.com
+    JOHN@EXAMPLE.COM
   ].each do |email|
     test "requires valid email format (#{email})" do
       user = User.create(email: email)
@@ -47,7 +48,7 @@ class UserTest < ActiveSupport::TestCase
   test "rejects duplicated email" do
     user = User.create!(name: "John", email:"john@example.org", password: "test")
     another_user = User.create(email: user.email)
-    
+
     refute another_user.errors[:email].empty?
   end
 end

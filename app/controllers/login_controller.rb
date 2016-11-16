@@ -11,7 +11,7 @@ class LoginController < ApplicationController
       session[:user_id] = user.id
       redirect_to return_url
     else
-      flash.now.alert = 'Invalid e-mail or password.' #to render in the same action
+      flash.now.alert = t('flash.login.create.alert') #to render in the same action
       render :new
     end
   end

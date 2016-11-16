@@ -1,0 +1,8 @@
+pt-BR:
+  flash:
+    login:
+      create:
+        alert: 'Email ou senha inválidos.'
+    signup:
+      create:
+        notice: 'Sua conta foi criada.'

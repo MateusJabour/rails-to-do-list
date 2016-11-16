@@ -1,7 +1,7 @@
 <h1>Signup#new</h1>
 <% if @user.errors.any? %>
   <p>
-    Please double check your form before continuing:
+    <%= t('form.error') %>
   </p>
   <ul>
     <% for message in @user.errors.full_messages  %>

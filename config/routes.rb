@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get '/signup' => 'signup#new'
-  post '/signup' => 'signup#create'
+  get '/choose/:locale' => 'choose_locale#choose', as: 'choose_locale'
 
-  get '/login' => 'login#new'
-  post '/login' => 'login#create'
+  scope '/:locale' do
+    get '/' => 'pages#home', as: 'home'
 
-  get '/tasks' => 'tasks#index'
+    get '/signup' => 'signup#new'
+    post '/signup' => 'signup#create'
+
+    get '/login' => 'login#new'
+    post '/login' => 'login#create'
+
+    get '/tasks' => 'tasks#index'
+  end
+
 end

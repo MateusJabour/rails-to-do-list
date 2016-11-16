@@ -1,0 +1,8 @@
+en:
+  flash:
+    login:
+      create:
+        alert: 'Invalid e-mail or password.'
+    signup:
+      create:
+        notice: 'Your account has been created.'

@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'bcrypt'
 gem 'validators'
+gem 'rails-i18n'
 
 group :development, :test do
   gem 'pry-rails'
@@ -24,3 +25,5 @@ end
 group :development do
   gem 'listen', '~> 3.0.5'
 end
+
+1:43:29

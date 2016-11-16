@@ -5,7 +5,7 @@ class AuthenticationControllerTest < ActionController::TestCase
 
   test 'requires authentication' do
     get :index
-    assert_redirected_to '/login'
+    assert_redirected_to login_path
   end
 
   test 'render page for authenticated user' do

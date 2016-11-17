@@ -1,3 +1,19 @@
 pt-BR:
+  helpers:
+    submit:
+      user:
+        create: Criar minha conta
+        update: Atualizar minha conta
+
   form:
     error: 'Confira seu formulário antes de prosseguir:'
+
+    buttons:
+      login: Acessar minha conta
+
+    labels:
+      user:
+        name: Seu nome
+        email: Seu e-mail
+        password: Sua senha
+        password_confirmation: Confirme sua senha

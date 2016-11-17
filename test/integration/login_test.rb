@@ -4,12 +4,12 @@ class LoginTest < ActionDispatch::IntegrationTest
   test 'with valid credentials' do
     user = FactoryGirl.create(:user)
 
-    visit root_path
+    visit home_path(I18n.locale)
     click_on t('menu.login')
 
-    fill_in 'Your e-mail', with: user.email
-    fill_in 'Your password', with: 'test'
-    click_on 'Access your account'
+    fill_in t('form.labels.user.email'), with: user.email
+    fill_in t('form.labels.user.password'), with: 'test'
+    click_on t('form.buttons.login')
 
     assert_equal tasks_path(locale: I18n.locale), current_path
   end
@@ -17,11 +17,11 @@ class LoginTest < ActionDispatch::IntegrationTest
   test 'with invalid credentials' do
     user = FactoryGirl.create(:user)
 
-    visit root_path
+    visit home_path(I18n.locale)
     click_on t('menu.login')
-    fill_in 'Your e-mail', with: user.email
-    fill_in 'Your password', with: 'invalid'
-    click_on 'Access your account'
+    fill_in t('form.labels.user.email'), with: user.email
+    fill_in t('form.labels.user.password'), with: 'invalid'
+    click_on t('form.buttons.login')
 
     assert_equal login_path(locale: I18n.locale), current_path
     assert page.has_text?(t('flash.login.create.alert'))

@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    attributes:
+      user:
+        name: name
+        password: password
+
+      errors:
+        messages:
+          invalid_email: isn't a valid address.
+          disposable_email: can't be used (temporary email).

@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    attributes:
+      user:
+        name: nome
+        password: senha
+
+      errors:
+        messages:
+          invalid_email: não é um endereco válido.
+          disposable_email: não pode ser usado (email temporário).

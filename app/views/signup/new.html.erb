@@ -14,26 +14,26 @@
 
 <%= form_for @user, url: signup_path do |f| %>
   <p>
-    <%= f.label :name, 'Your name' %>
+    <%= f.label :name, t('form.labels.user.name') %>
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <%= f.label :email, 'Your email' %>
+    <%= f.label :email, t('form.labels.user.email') %>
     <%= f.email_field :email %>
   </p>
 
   <p>
-    <%= f.label :password, 'Your password' %>
+    <%= f.label :password, t('form.labels.user.password') %>
     <%= f.password_field :password %>
   </p>
 
   <p>
-    <%= f.label :password_confirmation, 'Confirm your password' %>
+    <%= f.label :password_confirmation, t('form.labels.user.password_confirmation') %>
     <%= f.password_field :password_confirmation %>
   </p>
 
   <p>
-    <%= f.submit 'Create my account' %>
+    <%= f.submit %>
   </p>
 <% end %>

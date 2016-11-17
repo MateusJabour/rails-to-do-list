@@ -2,37 +2,28 @@
 <html>
   <head>
     <title>Taskv</title>
-    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
-    <% flash.each do |type, message| %>
-      <p>
-        <%= message %>
-      </p>
-    <% end %>
+    <div class="page-container">
 
-    <ul>
-      <li>
-        <%= link_to t('menu.home'), root_path %>
-      </li>
-      <li>
-        <%= link_to t('menu.signup'), signup_path %>
-      </li>
+      <%= render 'main_header' %>
 
-      <li>
-        <%= link_to t('menu.login'), login_path %>
-      </li>
-    </ul>
+      <%= render 'flash_messages' %>
 
-    <%= yield %>
+      <div class="content">
+        <%= yield %>
+      </div>
 
-    <p>
-      <%= link_to 'English', choose_locale_path(locale: 'en') %>
-      <%= link_to 'Portugues(Brasil)', choose_locale_path(locale: 'pt-BR') %>
-    </p>
+      <%= render 'main_footer' %>
+    </div>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

@@ -1,0 +1,37 @@
+.main-footer
+  position: relative
+  margin-top: 50px
+  border-top: 1px solid #ccc
+  padding-top: 25px
+
+.main-footer,
+.main-footer *
+  color: #888
+
+.languages
+  overflow: clear
+  position: absolute
+  right: 0
+  top: 25px
+  font-size: 14px
+
+.languages > li
+  float: left
+
+.languages > li + li
+  margin-left: 15px
+
+.lang:before
+  content: ''
+  display: inline-block
+  width: 16px
+  height: 16px
+  margin-right: 5px
+  position: relative
+  top: 4px
+
+.lang.br:before
+  background-image: image-url('br.png')
+
+.lang.us:before
+  background-image: image-url('us.png')

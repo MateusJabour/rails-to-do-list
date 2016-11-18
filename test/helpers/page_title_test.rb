@@ -11,4 +11,12 @@ class PageTitleTest < ActionView::TestCase
     end
   end
 
+  test "returns alias for create" do
+    controller.stub :controller_name, 'signup' do #not working
+      controller.stub :action_name, 'create' do
+        assert_equal page_title, t('signup.new.title')
+      end
+    end
+  end
+
 end

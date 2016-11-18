@@ -4,8 +4,9 @@ pt-BR:
       user:
         name: nome
         password: senha
+        email: email
 
-      errors:
-        messages:
-          invalid_email: não é um endereco válido.
-          disposable_email: não pode ser usado (email temporário).
+    errors:
+      messages:
+        invalid_email: não é um endereco válido.
+        disposable_email: não pode ser usado (email temporário).

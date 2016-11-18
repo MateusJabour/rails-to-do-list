@@ -1,15 +1,20 @@
-<h1>Signup#new</h1>
+<% content_for :page_title do %>
+  <%= t('.title') %>
+<% end %>
+
 <% if @user.errors.any? %>
-  <p>
-    <%= t('form.error') %>
-  </p>
-  <ul>
-    <% for message in @user.errors.full_messages  %>
-    <li>
-      <%= message %>
-    </li>
-    <% end %>
-  </ul>
+  <div class="error-messages">
+    <p>
+      <%= t('form.error') %>
+    </p>
+    <ul>
+      <% for message in @user.errors.full_messages  %>
+      <li>
+        <%= message %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
 
 <%= form_for @user, url: signup_path do |f| %>
@@ -34,6 +39,6 @@
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit  class: 'button'%>
   </p>
 <% end %>

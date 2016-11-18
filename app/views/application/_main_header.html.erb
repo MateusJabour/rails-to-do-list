@@ -3,13 +3,12 @@
     <%= image_tag 'logo.png'%>
   <% end %>
 
-  <h1 class="main-header-title">Your to-do list</h1>
+  <h1 class="main-header-title">
+    <%= page_title %>
+  </h1>
 
   <nav class="main-nav">
     <ul>
-      <li>
-        <%= link_to t('menu.home'), root_path(locale: nil) %>
-      </li>
       <li>
         <%= link_to t('menu.signup'), signup_path %>
       </li>

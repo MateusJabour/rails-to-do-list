@@ -9,6 +9,16 @@
 
   <nav class="main-nav">
     <ul>
+
+      <% if logged_in? %>
+      <li>
+        <%= gravatar current_user.email, current_user.name %>
+      </li>
+
+      <li>
+        <%= button_to t('form.buttons.logout'), logout_path %>  
+      </li>
+      <% else %>
       <li>
         <%= link_to t('menu.signup'), signup_path %>
       </li>
@@ -16,6 +26,7 @@
       <li>
         <%= link_to t('menu.login'), login_path %>
       </li>
+      <% end %>
     </ul>
   </nav>
 </header>

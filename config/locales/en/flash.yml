@@ -3,6 +3,9 @@ en:
     login:
       create:
         alert: 'Invalid e-mail or password.'
+      destroy:
+        notice: 'Your session was ended.'
+
     signup:
       create:
         notice: 'Your account has been created.'

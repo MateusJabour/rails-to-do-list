@@ -15,4 +15,9 @@ class LoginController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+    reset_session
+    redirect_to login_path, notice: t('flash.login.destroy.notice')
+  end
 end

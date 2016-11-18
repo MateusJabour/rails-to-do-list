@@ -11,8 +11,10 @@ Rails.application.routes.draw do
 
     get '/login' => 'login#new'
     post '/login' => 'login#create'
+    post '/logout' => 'login#destroy'
 
     get '/tasks' => 'tasks#index'
+    post '/tasks' => 'tasks#create', as: 'new_task'
   end
 
 end

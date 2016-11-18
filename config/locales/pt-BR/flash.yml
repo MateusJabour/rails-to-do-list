@@ -3,6 +3,8 @@ pt-BR:
     login:
       create:
         alert: 'Email ou senha inválidos.'
+      destroy:
+        notice: 'Sua sessão foi encerrada.'
     signup:
       create:
         notice: 'Sua conta foi criada.'

@@ -4,12 +4,15 @@ en:
       user:
         create: Create my account
         update: Update my account
+      task:
+        create: add
 
   form:
     error: 'Please double check your form before continuing:'
 
     buttons:
       login: Access my account
+      logout: Log out
 
     labels:
       user:
@@ -17,3 +20,13 @@ en:
         email: Your e-mail
         password: Your password
         password_confirmation: Confirm your password
+
+      task:
+        title: Add a new task...
+
+    placeholders:
+      task:
+        title:
+        - "Ex.: Fish with the family"
+        - "Ex.: Buy a pair of glasses"
+        - "Ex.: Skydive"

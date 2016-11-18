@@ -4,12 +4,14 @@ pt-BR:
       user:
         create: Criar minha conta
         update: Atualizar minha conta
-
+      task:
+        create: adicionar
   form:
     error: 'Confira seu formulário antes de prosseguir:'
 
     buttons:
       login: Acessar minha conta
+      logout: Sair
 
     labels:
       user:
@@ -17,3 +19,13 @@ pt-BR:
         email: Seu e-mail
         password: Sua senha
         password_confirmation: Confirme sua senha
+
+      task:
+        title: Adicione uma nova tarefa...
+
+    placeholders:
+      task:
+        title:
+          - "Ex.: Ir pescar"
+          - "Ex.: Comprar um oculos"
+          - "Ex.: Pular de paraquedas"

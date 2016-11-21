@@ -8,6 +8,7 @@ pt-BR:
         create: adicionar
   form:
     error: 'Confira seu formulário antes de prosseguir:'
+    error_inline: "Erro: %{errors}"
 
     buttons:
       login: Acessar minha conta

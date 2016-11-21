@@ -9,3 +9,6 @@ en:
     signup:
       create:
         notice: 'Your account has been created.'
+    tasks:
+      create:
+        notice: 'Task added'

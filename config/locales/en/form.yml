@@ -9,6 +9,7 @@ en:
 
   form:
     error: 'Please double check your form before continuing:'
+    error_inline: "Error: %{errors}"
 
     buttons:
       login: Access my account

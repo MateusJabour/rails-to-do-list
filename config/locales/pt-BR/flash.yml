@@ -8,3 +8,6 @@ pt-BR:
     signup:
       create:
         notice: 'Sua conta foi criada.'
+    tasks:
+      create:
+        notice: 'Tarefa adicionada com sucesso'

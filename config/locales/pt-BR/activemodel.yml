@@ -5,8 +5,23 @@ pt-BR:
         name: nome
         password: senha
         email: email
+        
+      task:
+        title: título
+        user: usuário
+
+    models:
+      user: usúario
+      task: tarefa
 
     errors:
       messages:
         invalid_email: não é um endereco válido.
         disposable_email: não pode ser usado (email temporário).
+        required: "%{model} é obrigatório."
+
+      models:
+        task:
+          attributes:
+            user:
+              required: 'é obrigatório'

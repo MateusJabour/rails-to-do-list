@@ -5,7 +5,7 @@ class CreateTasks < ActiveRecord::Migration[5.0]
       t.belongs_to :user, foreign_key: true, null:false, type: :uuid
       t.datetime :completed_at, null: true
 
-      t.timestamps null:false
+      t.timestamps null: false
     end
   end
 end

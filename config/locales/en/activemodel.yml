@@ -6,7 +6,22 @@ en:
         password: password
         email: email
 
+      task:
+        title: title
+        user: user
+        
+    models:
+      user: user
+      task: task
+
     errors:
       messages:
         invalid_email: isn't a valid address.
         disposable_email: can't be used (temporary email).
+        required: "%{model} is required."
+
+      models:
+        task:
+          attributes:
+            user:
+              required: 'is required'

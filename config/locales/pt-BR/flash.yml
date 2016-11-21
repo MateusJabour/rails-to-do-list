@@ -11,3 +11,5 @@ pt-BR:
     tasks:
       create:
         notice: 'Tarefa adicionada com sucesso'
+      batch_update:
+        notice: Tarefas atualizadas com sucesso.

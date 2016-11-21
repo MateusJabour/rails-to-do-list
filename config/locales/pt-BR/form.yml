@@ -13,6 +13,7 @@ pt-BR:
     buttons:
       login: Acessar minha conta
       logout: Sair
+      update_tasks: Atualizar
 
     labels:
       user:

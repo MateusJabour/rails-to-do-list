@@ -12,3 +12,5 @@ en:
     tasks:
       create:
         notice: 'Task added'
+      batch_update:
+        notice: Tasks updated sucessfully.

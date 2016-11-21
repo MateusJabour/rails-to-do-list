@@ -6,9 +6,14 @@
   </p>
 <% end %>
 
+<%= form_tag update_tasks_path, method: 'patch' do %>
+  <ul>
+    <% for task in @tasks %>
+    <%= render task %>
+    <% end %>
+  </ul>
 
-<% for task in @tasks %>
   <p>
-    <%= task.title %>
+    <%= submit_tag t('form.buttons.update_tasks'), class: 'button' %>
   </p>
 <% end %>

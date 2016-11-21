@@ -10,4 +10,14 @@ class TaskTest < ActiveSupport::TestCase
     task = Task.create
     assert task.errors[:user].any?
   end
+
+  test "returns status for pending tasks" do
+    task = Task.new(completed_at: nil)
+    assert_equal Task::PENDING_STATUS, task.status
+  end
+
+  test "returns status for completed tasks" do
+    task = Task.new(completed_at: Time.current)
+    assert_equal Task::COMPLETE_STATUS, task.status
+  end
 end

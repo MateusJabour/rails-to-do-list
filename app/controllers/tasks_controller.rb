@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
   def index
     @task = Task.new
-    @tasks = current_user.tasks
+    @tasks = current_user.tasks.pending_first
   end
 
   def create
@@ -15,6 +15,11 @@ class TasksController < ApplicationController
                 {alert: t('form.error_inline', errors: errors)}
               end
     redirect_to tasks_path, options
+  end
+
+  def batch_update
+    TaskBatchUpdate.update(current_user, params[:task_ids])
+    redirect_to tasks_path, notice: t('flash.tasks.batch_update.notice')
   end
 
   private

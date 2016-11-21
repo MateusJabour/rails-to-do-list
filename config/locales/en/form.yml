@@ -14,6 +14,7 @@ en:
     buttons:
       login: Access my account
       logout: Log out
+      update_tasks: Update
 
     labels:
       user:

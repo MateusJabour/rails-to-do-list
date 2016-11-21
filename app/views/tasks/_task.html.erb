@@ -1,0 +1,11 @@
+<li class="<%= task.status %>">
+  <%= check_box_tag 'task_ids[]', task.id, task.completed_at, id: "task-#{task.id}" %>
+  <%= label_tag "task-#{task.id}", task.title %>
+  <label>
+  </label>
+
+  <span class="actions">
+    <a href="edit.html" class="edit">Edit</a>
+    <a href="remove.html" class="remove">Remove</a>
+  </span>
+</li>

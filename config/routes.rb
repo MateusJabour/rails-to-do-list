@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
     get '/tasks' => 'tasks#index'
     post '/tasks' => 'tasks#create', as: 'new_task'
+    patch '/tasks' => 'tasks#batch_update', as: 'update_tasks'
   end
 
 end

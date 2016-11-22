@@ -2,14 +2,18 @@ pt-BR:
   flash:
     login:
       create:
-        alert: 'Email ou senha inválidos.'
+        alert: 'Email ou senha inválidos'
       destroy:
-        notice: 'Sua sessão foi encerrada.'
+        notice: 'Sua sessão foi encerrada'
     signup:
       create:
-        notice: 'Sua conta foi criada.'
+        notice: 'Sua conta foi criada'
     tasks:
       create:
         notice: 'Tarefa adicionada com sucesso'
       batch_update:
-        notice: Tarefas atualizadas com sucesso.
+        notice: Tarefas atualizadas com sucesso
+      update:
+        notice: Tarefa atualizadas com sucesso
+      destroy:
+        notice: Tarefa deletada

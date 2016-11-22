@@ -1,11 +1,11 @@
-<li class="<%= task.status %>">
-  <%= check_box_tag 'task_ids[]', task.id, task.completed_at, id: "task-#{task.id}" %>
-  <%= label_tag "task-#{task.id}", task.title %>
+<li id="task-<%= task.id %>" class="<%= task.status %>">
+  <%= check_box_tag 'task_ids[]', task.id, task.completed_at, id: "field-task-#{task.id}" %>
+  <%= label_tag "field-task-#{task.id}", task.title %>
   <label>
   </label>
 
   <span class="actions">
-    <a href="edit.html" class="edit">Edit</a>
-    <a href="remove.html" class="remove">Remove</a>
+    <%= link_to t('actions.edit'), edit_task_path(task), class: 'edit' %>
+    <%= link_to t('actions.remove'), remove_task_path(task), class: 'remove' %>
   </span>
 </li>

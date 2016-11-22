@@ -2,15 +2,19 @@ en:
   flash:
     login:
       create:
-        alert: 'Invalid e-mail or password.'
+        alert: 'Invalid e-mail or password'
       destroy:
-        notice: 'Your session was ended.'
+        notice: 'Your session was ended'
 
     signup:
       create:
-        notice: 'Your account has been created.'
+        notice: 'Your account has been created'
     tasks:
       create:
         notice: 'Task added'
       batch_update:
-        notice: Tasks updated sucessfully.
+        notice: Tasks updated sucessfully
+      update:
+        notice: Task updated sucessfully
+      destroy:
+        notice: Task deleted

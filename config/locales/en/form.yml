@@ -6,6 +6,8 @@ en:
         update: Update my account
       task:
         create: add
+        update: update
+        remove: 'Yes, Im sure'
 
   form:
     error: 'Please double check your form before continuing:'

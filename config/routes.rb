@@ -16,6 +16,10 @@ Rails.application.routes.draw do
     get '/tasks' => 'tasks#index'
     post '/tasks' => 'tasks#create', as: 'new_task'
     patch '/tasks' => 'tasks#batch_update', as: 'update_tasks'
+    get '/tasks/:id/edit' => 'tasks#edit', as: 'edit_task'
+    patch '/tasks/:id/edit' => 'tasks#update', as: nil
+    get '/tasks/:id/remove' => 'tasks#remove', as: 'remove_task'
+    delete '/tasks/:id/remove' => 'tasks#destroy', as: nil
   end
 
 end

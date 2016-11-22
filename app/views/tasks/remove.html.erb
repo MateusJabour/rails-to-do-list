@@ -1,0 +1,11 @@
+<%= form_for @task, url: remove_task_path(@task), method: 'delete' do |f| %>
+  <p>
+    Are you sure you want to remove <strong>Some task</strong>?<br>
+    <small>You won't be able to restore it.</small>
+  </p>
+
+  <p>
+    <%= f.submit t('helpers.submit.task.remove'), class: 'button' %>
+    <%= link_to t('.cancel_removal'), tasks_path %>
+  </p>
+<% end %>

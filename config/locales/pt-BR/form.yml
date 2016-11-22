@@ -6,6 +6,9 @@ pt-BR:
         update: Atualizar minha conta
       task:
         create: adicionar
+        update: atualizar
+        remove: 'Sim, eu tenho certeza'
+
   form:
     error: 'Confira seu formulário antes de prosseguir:'
     error_inline: "Erro: %{errors}"

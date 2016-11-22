@@ -2,3 +2,8 @@ en:
   tasks:
     index:
       title: Your tasks
+    edit:
+      title: Edit task
+    remove:
+      title: Remove task
+      cancel_removal: Cancel, I've changed my mind

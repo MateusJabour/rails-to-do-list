@@ -2,3 +2,8 @@ pt-BR:
   tasks:
     index:
       title: Suas tarefas
+    edit:
+      title: Editar tarefa
+    remove:
+      title: Remover tarefa
+      cancel_removal: Cancelar, mudei de ideia
